@@ -1,9 +1,15 @@
 const lampada = document.getElementById('lampada');
 let quebrada = false;
 
-lampada.addEventListener('mouseover', function() {
+lampada.addEventListener('mouseenter', function() {
     if (!quebrada) {
         this.src = '1lampadaA.png';
+    }
+});
+
+lampada.addEventListener('mouseleave', function() {
+    if (!quebrada) {
+        this.src = '2lampadaB.png';
     }
 });
 
